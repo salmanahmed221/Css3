@@ -1,0 +1,137 @@
+/* Text Effects */
+
+.text_shadow {
+  text-shadow: 2px 4px 5px blue; /*  first horizontalyy Second veritically third blur */
+}
+
+.word_wrap {
+  border: 1px solid red;
+  width: 200px;
+  word-wrap: break-word;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: avi;
+  src: url("Hi Xiaobo.ttf");
+}
+
+.fontcss {
+  font-family: avi;
+}
+
+/* Transition */
+
+.love {
+  width: 50px;
+  height: 50px;
+  transition-property: width, height;
+  transition-duration: 2s;
+}
+
+.love:hover {
+  width: 100px;
+  height: 100px;
+}
+
+/* Multiple Column */
+
+.column {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule: solid;
+  column-rule-color: purple;
+}
+
+/* Background and border */
+
+.bg {
+  background-size: 100% 100%;
+  box-shadow: 2px 3px 4px royalblue; /*  first horizontalyy Second veritically third blur */
+  box-sizing: border-box;
+}
+
+/* Linear Gradient */
+
+.gr {
+  width: 100px;
+  height: 50px;
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+/* flex box */
+
+.flexbox {
+  display: flex;
+  /* flex-direction: */
+  /* justify-content: flex-start,flex-end; */
+  /* justify-content: space-between,space-evenly,space-around,centre; */
+}
+
+.a1 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+
+.a2 {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+}
+
+.a3 {
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+}
+
+/* Grid */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: red;
+  display: grid;
+  height: 700px;
+  /* grid-template-columns: 133px 133px 133px;
+  grid-template-rows: 133px 133px 133px; */
+  /* grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 145px 1fr 45px;
+  row-gap: 12px;
+  column-gap: 12px;
+  /* justify-content: start; */
+  /* align-items: center; */
+}
+
+.item {
+  background-color: aqua;
+  height: 122px;
+  width: 122px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.item2 {
+  justify-self: center;
+  align-self: center;
+}
